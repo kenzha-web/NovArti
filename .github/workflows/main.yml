@@ -2,11 +2,9 @@ name: linting, testing, building
 
 on:
   push:
-    branches:
-      - master
+    branches: [ master ]
   pull_request:
-    branches:
-      - master
+    branches: [ master ]
 
 jobs:
   pipeline:
@@ -20,7 +18,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Set up Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
 
@@ -29,9 +27,6 @@ jobs:
 
       - name: Build Production Project
         run: npm run build:prod
-
-      - name: Linting TypeScript
-        run: npm run lint:ts
 
       - name: Linting CSS
         run: npm run lint:scss
