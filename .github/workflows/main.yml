@@ -27,15 +27,19 @@ jobs:
 
       - name: Build Production Project
         run: npm run build:prod
+        if: always()
 
       - name: Build Storybook
         run: npm run storybook:build
 
       - name: Screenshot Testing
         run: npm run test:ui:ci
+        if: always()
 
       - name: Linting CSS
         run: npm run lint:scss
+        if: always()
 
       - name: Unit Testing
         run: npm run test:unit
+        if: always()
