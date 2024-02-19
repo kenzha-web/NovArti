@@ -3,5 +3,7 @@
   "Страница не найдена": "Страница не найдена",
   "throw error": "throw error",
   "Переключить": "Переключить",
-  "Короткий язык": "Ru"
+  "Короткий язык": "Ru",
+  "increment": "increment",
+  "decrement": "decrement"
 }
