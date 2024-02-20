@@ -1,5 +1,7 @@
 {
   " ": " ",
+  "decrement": "decrement",
+  "increment": "increment",
   "throw error": "throw error",
   "Войти": "Войти",
   "Главная страница": "Main page",
@@ -8,7 +10,5 @@
   "Переключить": "Toggle",
   "Произошла непредвиденная ошибка": "An unexpected error has occurred",
   "Страница не найдена": "Page not found",
-  "Язык": "Language",
-  "increment": "increment",
-  "decrement": "decrement"
+  "Язык": "Language"
 }
