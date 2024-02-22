@@ -5,5 +5,13 @@
   "Переключить": "Toggle",
   "Короткий язык": "En",
   "increment": "increment",
-  "decrement": "decrement"
+  "decrement": "decrement",
+  " ": " ",
+  "Войти": "Log in",
+  "Главная страница": "Main page",
+  "О странице": "About the page",
+  "Обновить страницу": "Refresh the page",
+  "Произошла непредвиденная ошибка": "An unexpected error has occurred",
+  "Введите имя пользователя": "Введите имя пользователя",
+  "Введите пароль": "Введите пароль"
 }
