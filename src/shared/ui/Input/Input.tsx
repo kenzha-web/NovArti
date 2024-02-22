@@ -6,7 +6,6 @@ import React, {
     useRef,
     useState,
 } from 'react';
-import { use } from 'i18next';
 import cls from './Input.module.scss';
 
 type HTMLInputProps = Omit<
