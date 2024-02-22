@@ -2,9 +2,11 @@ name: linting, testing, building
 
 on:
   push:
-    branches: [ master ]
+    branches-ignore:
+      branches: [ master ]
   pull_request:
-    branches: [ master ]
+    branches-ignore:
+      branches: [ master ]
 
 jobs:
   pipeline:
