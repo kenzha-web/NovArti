@@ -1,3 +1,4 @@
+const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
 const path = require('path');
 
 module.exports = {
@@ -10,5 +11,9 @@ module.exports = {
     framework: '@storybook/react',
     core: {
         builder: 'webpack5',
+    },
+    webpackFinal: async (config, { configType }) => {
+        config.resolve.plugins = [new TsconfigPathsPlugin()];
+        return config;
     },
 };
