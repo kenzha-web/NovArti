@@ -36,6 +36,13 @@
     }
   ],
   "profile": {
-    "name": "typicode"
+    "first": "Kenzha",
+    "lastname": "Web",
+    "age": 23,
+    "currency": "KZT",
+    "country": "Kazakhstan",
+    "city": "Astana",
+    "username": "admin",
+    "avatar": "https://img.freepik.com/free-vector/mysterious-mafia-man-smoking-cigarette_52683-34828.jpg"
   }
 }
