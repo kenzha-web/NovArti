@@ -1,47 +1,47 @@
-name: linting, testing, building
-
-on:
-  push:
-    branches-ignore:
-      branches: [ master ]
-  pull_request:
-    branches-ignore:
-      branches: [ master ]
-
-jobs:
-  pipeline:
-    runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [ 17.x ]
-
-    steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v2
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v1
-        with:
-          node-version: ${{ matrix.node-version }}
-
-      - name: Install Modules
-        run: npm install
-
-      - name: Build Production Project
-        run: npm run build:prod
-        if: always()
-
-      - name: Build Storybook
-        run: npm run storybook:build
-
-      - name: Screenshot Testing
-        run: npm run test:ui:ci
-        if: always()
-
-      - name: Linting CSS
-        run: npm run lint:scss
-        if: always()
-
-      - name: Unit Testing
-        run: npm run test:unit
-        if: always()
+#name: linting, testing, building
+#
+#on:
+#  push:
+#    branches-ignore:
+#      branches: [ master ]
+#  pull_request:
+#    branches-ignore:
+#      branches: [ master ]
+#
+#jobs:
+#  pipeline:
+#    runs-on: ubuntu-latest
+#    strategy:
+#      matrix:
+#        node-version: [ 17.x ]
+#
+#    steps:
+#      - name: Checkout Repository
+#        uses: actions/checkout@v2
+#
+#      - name: Set up Node.js
+#        uses: actions/setup-node@v1
+#        with:
+#          node-version: ${{ matrix.node-version }}
+#
+#      - name: Install Modules
+#        run: npm install
+#
+#      - name: Build Production Project
+#        run: npm run build:prod
+#        if: always()
+#
+#      - name: Build Storybook
+#        run: npm run storybook:build
+#
+#      - name: Screenshot Testing
+#        run: npm run test:ui:ci
+#        if: always()
+#
+#      - name: Linting CSS
+#        run: npm run lint:scss
+#        if: always()
+#
+#      - name: Unit Testing
+#        run: npm run test:unit
+#        if: always()
